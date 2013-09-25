@@ -39,7 +39,7 @@ class userdeleteconfirm_form extends moodleform {
         $mform->addElement('html', '<th>Anmeldename</th>');
         $mform->addElement('html', '<th>Name</th>');
         $mform->addElement('html', '<th>Email</th>');
-        $mform->addElement('html', '<th>Zulestzt gesehen</th>');
+        $mform->addElement('html', '<th>'.get_string('last_seen', 'block_eledia_userdelete').'</th>');
         $mform->addElement('html', '</tr>');
         $i = 0;
         foreach ($user_mails as $mail) {

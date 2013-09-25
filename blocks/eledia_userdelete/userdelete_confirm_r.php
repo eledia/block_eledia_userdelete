@@ -34,19 +34,14 @@ require_capability('moodle/site:config', get_context_instance(CONTEXT_SYSTEM));
 
 $PAGE->set_url('/blocks/eledia_userdelte/userdelete_confirm.php');
 $PAGE->set_context(get_context_instance(CONTEXT_SYSTEM));
-$PAGE->set_heading('Userdeletion - with Confirmation');
+$PAGE->set_heading(get_string('eledia_header', 'block_eledia_userdelete'));
 echo $OUTPUT->header();
 
 echo '<div style="width:800px; margin:20px auto;">';
 
-echo '<div style="width:500px; margin:10px 150px;">
-        Diese Seite erm&ouml;glicht Ihnen eine Liste von Usern zu l&ouml;schen, die aus der Datei
-        "{moodledata}/temp/delete_users.csv" ausgelesen wurden. <br><br>Die Datei muss per Hand an
-        dieser Stelle abgelegt werden. Die Nutzer werden hierbei über die email Adresse identifiziert.
-        In jeder Zeile der csv Datei muss also eine mail Adresse abgelegt werden. <br><br>Es werden
-        jeweils 100 User angezeigt, deren L&ouml;schung Sie best&auml;tigen k&ouml;nnen. User die
-        schon gel&ouml;scht wurden, werden in der Liste nicht angezeigt.
-      </div>';
+echo '<div style="width:500px; margin:10px 150px;">';
+echo get_string('desc2', 'block_eledia_userdelete');
+echo '</div>';
 
 $datafile = $CFG->dataroot.'/temp/delete_users.csv';
 
@@ -61,21 +56,25 @@ if ($formdata = data_submitted()) {
     }
 
     if ($success) {
-        echo '<div style="width:500px; margin:10px 150px; color:green; font-weight:bold;">
-            Die ausgew&auml;hlten Benutzer wurden gel&ouml;scht.</div>';
+        echo '<div style="width:500px; margin:10px 150px; color:green; font-weight:bold;">';
+        echo get_string('successful_deleting', 'block_eledia_userdelete');
+        echo '</div>';
     } else {
-        echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">
-            Einige User konnten nicht gel&ouml;scht werden.</div>';
+        echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">';
+        echo get_string('successful_deleting', 'block_eledia_userdelete');
+        echo '</div>';
     }
 }
 
 if (!file_exists($datafile)) {
-    echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">
-        Datei wurde nicht gefunden!</div>';
+    echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">';
+    echo get_string('file_not_found', 'block_eledia_userdelete');
+    echo '</div>';
 } else {
     if (!is_readable($datafile)) {
-        echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">
-            Datei kann nicht gelesen werden!</div>';
+        echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">';
+        echo get_string('file_not_found', 'block_eledia_userdelete');
+        echo '</div>';
     } else {
         $users = array();
         $handle = fopen($datafile, 'r');
@@ -89,8 +88,9 @@ if (!file_exists($datafile)) {
     }
 
     if (empty($users)) {
-        echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">
-            Die Liste enth&auml;lt nur bereits gel&ouml;schte Benutzer.</div>';
+        echo '<div style="width:500px; margin:10px 150px; color:red; font-weight:bold;">';
+        echo get_string('only_deletted_user', 'block_eledia_userdelete');
+        echo '</div>';
     } else {
 
         echo '<form action="userdelete_confirm.php" method="post">';
@@ -100,7 +100,7 @@ if (!file_exists($datafile)) {
                     <th>Username</th>
                     <th>Name</th>
                     <th>Email</th>
-                    <th>Zuletzt gesehen</th>
+                    <th>'.get_string('last_seen', 'block_eledia_userdelete').'</th>
                 </tr>';
 
         if (count($users)>100) {
