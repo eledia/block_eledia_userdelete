@@ -103,17 +103,17 @@ if (!file_exists($datafile)) {
                     <th>'.get_string('last_seen', 'block_eledia_userdelete').'</th>
                 </tr>';
 
-        if (count($users)>100) {
+        if (count($users) > 100) {
             $num_users = 100;
         } else {
             $num_users = count($users);
         }
 
-        for ($i=0; $i < $num_users; $i++) {
+        for ($i = 0; $i < $num_users; $i++) {
             if (isset($users[$i])) {
                 $u = $users[$i];
 
-                if ($u->lastaccess==0) {
+                if ($u->lastaccess == 0) {
                     $lastaccess = 'nie';
                 } else {
                     $lastaccess = date('d.m.Y - H:m', $u->lastaccess);

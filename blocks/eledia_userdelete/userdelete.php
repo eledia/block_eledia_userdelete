@@ -13,6 +13,17 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Settings for the deletion in the first step. Redirects to the confirm page to proccess deletion.
+ *
+ * @package    blocks
+ * @subpackage eledia_userdelete
+ * @author     Benjamin Wolf <support@eledia.de>
+ * @copyright  2013 eLeDia GmbH
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 require_once('../../config.php');
 require_once('userdelete_form.php');
 global $CFG, $_SESSION;

@@ -13,6 +13,17 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Confirm the users list to delete. Calls the form to process deletion.
+ *
+ * @package    blocks
+ * @subpackage eledia_userdelete
+ * @author     Benjamin Wolf <support@eledia.de>
+ * @copyright  2013 eLeDia GmbH
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 require_once('../../config.php');
 require_once('userdelete_confirm_form.php');
 
@@ -25,7 +36,6 @@ $PAGE->navbar->add(get_string('pluginname', 'block_eledia_userdelete'));
 $PAGE->set_pagelayout('course');
 
 $context = get_context_instance(CONTEXT_SYSTEM);
-
 require_capability('moodle/site:config', $context);
 
 $mform = new userdeleteconfirm_form();

@@ -14,4 +14,17 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
+/**
+ * Version information of this plugin
+ *
+ * @package    blocks
+ * @subpackage eledia_userdelete
+ * @author     Benjamin Wolf <support@eledia.de>
+ * @copyright  2013 eLeDia GmbH
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 $plugin->version = '2013031500';
+$plugin->release = '0.1 (2013031500)';
+$plugin->maturity = MATURITY_STABLE;
+$plugin->requires  = 2013051402;

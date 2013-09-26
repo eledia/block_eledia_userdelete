@@ -13,6 +13,17 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * Block class for the plugin.
+ *
+ * @package    blocks
+ * @subpackage eledia_userdelete
+ * @author     Benjamin Wolf <support@eledia.de>
+ * @copyright  2013 eLeDia GmbH
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 class block_eledia_userdelete extends block_base {
 
     public function init() {
@@ -21,7 +32,7 @@ class block_eledia_userdelete extends block_base {
     }
 
     public function applicable_formats() {
-        return array('site'=>true);
+        return array('site' => true);
     }
 
     public function get_content() {
@@ -30,7 +41,7 @@ class block_eledia_userdelete extends block_base {
             return $this->content;
         }
 
-        $this->content =  new object();
+        $this->content = new object();
         $this->content->text = '';
         $this->content->footer = '';
 

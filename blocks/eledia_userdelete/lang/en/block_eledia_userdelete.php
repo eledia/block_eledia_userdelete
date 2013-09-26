@@ -13,6 +13,17 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * En language file for the plugin.
+ *
+ * @package    blocks
+ * @subpackage eledia_userdelete
+ * @author     Benjamin Wolf <support@eledia.de>
+ * @copyright  2013 eLeDia GmbH
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 $string['back'] = 'Back';
 
 $string['delete_desc'] = '100 users will be displayd on each page, which you can accept to be deleted. Users which are not found or already deleted are not displayed.';
@@ -25,9 +36,9 @@ $string['desc2'] = 'This Site allows you to delete a list of users, which are re
         one mail adress.<br><br>The users are viewed in steps of 100 users per page. You can confirm
         to delete. User which are deleted already will not be displayed.';
 
-$string['eledia_config_header'] ='Configuration of user delete block';
-$string['eledia_delete_header'] ='mail list of user to delete';
-$string['eledia_desc_header'] ='Plugindescription';
+$string['eledia_config_header'] = 'Configuration of user delete block';
+$string['eledia_delete_header'] = 'mail list of user to delete';
+$string['eledia_desc_header'] = 'Plugindescription';
 $string['eledia_header'] = 'Delete User';
 $string['eledia_userdelete:addinstance'] = 'add user delete block';
 
@@ -39,10 +50,10 @@ $string['last_seen'] = 'Last seen';
 
 $string['only_deletted_user'] = 'The list only contains deleted users.';
 
-$string['pluginname'] = 'eLeDia User Delete';
+$string['pluginname'] = 'User Delete';
 
 $string['start_confirm'] = 'check user';
 $string['start_deleting'] = 'delete user';
 $string['successful_deleting'] = 'The choosen users have been deleted.';
 
-$string['title'] = 'eledia User Delete';
+$string['title'] = 'User Delete';
