@@ -47,9 +47,9 @@ class userdeleteconfirm_form extends moodleform {
 
         // Table headers.
         $mform->addElement('html', '<table border="1"><tr>');
-        $mform->addElement('html', '<th>Anmeldename</th>');
+        $mform->addElement('html', '<th>'.get_string('username').'</th>');
         $mform->addElement('html', '<th>Name</th>');
-        $mform->addElement('html', '<th>Email</th>');
+        $mform->addElement('html', '<th>'.get_string('email').'</th>');
         $mform->addElement('html', '<th>'.get_string('last_seen', 'block_eledia_userdelete').'</th>');
         $mform->addElement('html', '</tr>');
         $i = 0;

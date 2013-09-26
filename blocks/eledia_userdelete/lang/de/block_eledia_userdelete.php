@@ -39,7 +39,7 @@ $string['desc2'] = 'Diese Seite erm&ouml;glicht Ihnen eine Liste von Usern zu l&
 
 $string['eledia_config_header'] = 'Konfiguration für das löschen von Nutzer/innen';
 $string['eledia_delete_header'] = 'Mail Liste der zu löschenden Nutzer';
-$string['eledia_desc_header'] = 'Pluginbeschreibung';
+$string['eledia_desc_header'] = '';
 $string['eledia_header'] = 'Nutzer löschen';
 $string['eledia_userdelete:addinstance'] = 'Block Nutzer löschen hinzufügen';
 

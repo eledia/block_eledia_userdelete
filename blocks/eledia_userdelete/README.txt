@@ -9,8 +9,9 @@ Usage:
 The process runs in two steps. On the first page you have to enter the list of email in a textbox.
 One email in each line. With the button "check user" you go to the second page.
 
-On the second page the users are listed in steps of 100 per page. You can start the deleting proccess
-for the user you see with the button "delete user".
+On the second page you can see the users found for the emails, before you delete them. The second page shows only 100 lines at a time.
+You can start the deleting process for the users you see with the button "delete user".
+If the list is greater than 100 the following users are displayed after deleting the current displayed.
 
 copyright  2013 eLeDia GmbH http://eledia.de
 license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
