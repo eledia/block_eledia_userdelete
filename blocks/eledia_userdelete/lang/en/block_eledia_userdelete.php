@@ -51,10 +51,10 @@ $string['last_seen'] = 'Last seen';
 
 $string['only_deletted_user'] = 'The list only contains deleted users.';
 
-$string['pluginname'] = 'User Delete';
+$string['pluginname'] = 'Delete User by Maillist';
 
 $string['start_confirm'] = 'Check user';
 $string['start_deleting'] = 'Delete user';
 $string['successful_deleting'] = 'The choosen users have been deleted.';
 
-$string['title'] = 'User Delete';
+$string['title'] = 'Delete User by Maillist';

@@ -51,11 +51,10 @@ $string['last_seen'] = 'Zuletzt gesehen';
 
 $string['only_deletted_user'] = 'Die Liste enth&auml;lt nur bereits gel&ouml;schte Benutzer.';
 
-$string['pluginname'] = 'Nutzer löschen';
+$string['pluginname'] = 'Nutzer per Mailliste löschen';
 
 $string['start_confirm'] = 'Nutzer prüfen';
 $string['start_deleting'] = 'Löschen beginnen';
 $string['successful_deleting'] = 'Die ausgew&auml;hlten Benutzer wurden gel&ouml;scht.';
 
-$string['title'] = 'Nutzer löschen';
-
+$string['title'] = 'Nutzer per Mailliste löschen';
