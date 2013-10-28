@@ -30,10 +30,10 @@ require_once('../../config.php');
 global $OUTPUT, $DB;
 
 require_login();
-require_capability('moodle/site:config', get_context_instance(CONTEXT_SYSTEM));
+require_capability('moodle/site:config', CONTEXT_SYSTEM::instance());
 
 $PAGE->set_url('/blocks/eledia_userdelte/userdelete_confirm.php');
-$PAGE->set_context(get_context_instance(CONTEXT_SYSTEM));
+$PAGE->set_context(CONTEXT_SYSTEM::instance());
 $PAGE->set_heading(get_string('eledia_header', 'block_eledia_userdelete'));
 echo $OUTPUT->header();
 

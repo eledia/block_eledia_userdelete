@@ -45,7 +45,7 @@ class block_eledia_userdelete extends block_base {
         $this->content->text = '';
         $this->content->footer = '';
 
-        if (has_capability('moodle/site:config', get_context_instance(CONTEXT_SYSTEM))) {
+        if (has_capability('moodle/site:config', CONTEXT_SYSTEM::instance())) {
 
             $this->content->text .= '<ul>';
             $this->content->text .= '<li>';
