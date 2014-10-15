@@ -70,7 +70,12 @@ class userdeleteconfirm_form extends moodleform {
                 $mform->addElement('html', '<td>'.$u->username.'</td>');
                 $mform->addElement('html', '<td>'.$u->firstname.' '.$u->lastname.'</td>');
                 $mform->addElement('html', '<td>'.$u->email.'</td>');
-                $mform->addElement('html', '<td>'.date('d.m.Y', $u->lastaccess).'</td>');
+                if (empty($u->lastaccess)) {
+                    $mform->addElement('html', '<td>'.  get_string('never').'</td>');
+                } else {
+                    $mform->addElement('html', '<td>'.date('d.m.Y', $u->lastaccess).'</td>');
+                }
+
                 $mform->addElement('html', '</tr>');
                 $i++;
             }
