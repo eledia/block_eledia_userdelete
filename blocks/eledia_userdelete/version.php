@@ -28,3 +28,4 @@ $plugin->version = 2013092600;
 $plugin->release = '0.2 (2013092600)';
 $plugin->maturity = MATURITY_STABLE;
 $plugin->requires  = 2013101800;
+$plugin->component = 'block_eledia_userdelete';
