@@ -52,6 +52,7 @@ $string['last_seen'] = 'Last seen';
 $string['only_deletted_user'] = 'The list only contains deleted users.';
 
 $string['pluginname'] = 'Delete User by Maillist';
+$string['privacy:metadata'] = 'The eledia Delete User by Maillist plugin does not store any personal data.';
 
 $string['start_confirm'] = 'Check user';
 $string['start_deleting'] = 'Delete user';

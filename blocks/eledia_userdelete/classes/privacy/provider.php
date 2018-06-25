@@ -15,17 +15,28 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information of this plugin
  *
- * @package    blocks
- * @subpackage eledia_userdelete
- * @author     Benjamin Wolf <support@eledia.de>
- * @copyright  2013 eLeDia GmbH
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     blocks
+ * @subpackage  eledia_userdelete
+ * @copyright   2018 eLeDia GmbH
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$plugin->version = 2018062200;
-$plugin->release = '0.3 (2018062200)';
-$plugin->maturity = MATURITY_STABLE;
-$plugin->requires  = 2013101800;
-$plugin->component = 'block_eledia_userdelete'; 
+namespace block_eledia_userdelete\privacy;
+defined('MOODLE_INTERNAL') || die();
+
+/**
+ * Privacy provider for block_eledia_userdelete.
+ */
+
+class provider implements \core_privacy\local\metadata\null_provider {
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
+    public static function get_reason() : string {
+        return 'privacy:metadata';
+    }
+}
