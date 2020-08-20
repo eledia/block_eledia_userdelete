@@ -40,7 +40,7 @@ $string['desc2'] = 'This Site allows you to delete a list of users, which are re
 $string['eledia_config_header'] = 'Configuration of user delete block';
 $string['eledia_delete_header'] = 'Mail list of user to delete';
 $string['eledia_desc_header'] = '';
-$string['eledia_header'] = 'Delete User';
+$string['eledia_header'] = 'Start Delete User';
 $string['eledia_userdelete:addinstance'] = 'Add user delete block';
 
 $string['failed_deleting'] = 'Some users could not be deleted';

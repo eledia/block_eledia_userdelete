@@ -24,7 +24,7 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$plugin->version = 2020080600;
+$plugin->version = 2020082000;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->requires  = 2013101800;
 $plugin->component = 'block_eledia_userdelete'; 
