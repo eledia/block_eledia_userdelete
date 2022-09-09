@@ -10,7 +10,7 @@ Feature: block_eledia_userdelete
   Scenario: block_eledia_userdelete add block
     Given I log in as "admin"
     And I am on site homepage
-    And I navigate to "Turn editing on" in current page administration
+    And I turn editing mode on
     And I add the "Delete User by Maillist" block
     Then I should see "Delete User by Maillist" in the "Delete User by Maillist" "block"
     Then I should see "Start Delete User" in the "Delete User by Maillist" "block"
